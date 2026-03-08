@@ -1,0 +1,166 @@
+.player {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* PAWEŁ Z HERBACIANYCH WYSP ====================================*/
+.player[data-tip^="Black-Tea"]::after,
+.player[data-tip^="Earlgrey"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 90%;   
+    box-shadow: 0 0 20px 10px #44AB44;
+    border-bottom: solid 2px lime;
+    z-index: 0;
+}
+
+.player[data-tip^="Black-Tea"] .number,
+.player[data-tip^="Earlgrey"] .number { visibility: hidden; }
+
+
+/* RIFLE HACKHACKKKK ====================================*/
+.player[data-tip^="brazylijski luz"]::after,
+.player[data-tip^="emota czachy"]::after,
+.player[data-tip^="szakszuka"]::after,
+.player[data-tip^="tonkotsu"]::after,
+.player[data-tip^="zbigniew boniuro"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 90%;   
+    box-shadow: 0 0 20px 10px rgb(162, 38, 52);
+    border-bottom: solid 2px red;
+    z-index: 0;
+}
+
+.player[data-tip^="brazylijski luz"] .number,
+.player[data-tip^="emota czachy"] .number,
+.player[data-tip^="szakszuka"] .number,
+.player[data-tip^="tonkotsu"] .number,
+.player[data-tip^="zbigniew boniuro"] .number { visibility: hidden; }
+
+
+/* RUGGGEDDD ====================================*/
+.player[data-tip^="Kowadło Chaosu"]::after,
+.player[data-tip^="Wkurzony Magazynier"]::after,
+.player[data-tip^="Where Tooki"]::after,
+.player[data-tip^="Rugged"]::after,
+.player[data-tip^="Who Corro"]::after,
+.player[data-tip^="Fiendish Koschei"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 90%;   
+    box-shadow: 0 0 20px 10px white;
+    border-bottom: solid 2px white;
+    z-index: 0;
+}
+
+.player[data-tip^="Kowadło Chaosu"] .number,
+.player[data-tip^="Wkurzony Magazynier"] .number,
+.player[data-tip^="Where Tooki"] .number,
+.player[data-tip^="Rugged"] .number,
+.player[data-tip^="Who Corro"] .number,
+.player[data-tip^="Fiendish Koschei"] .number { visibility: hidden; }
+
+
+/* MAROOOOODA ====================================*/
+.player[data-tip^="Limsa Lominsa"]::after,
+.player[data-tip^="Angelica Heizen"]::after,
+.player[data-tip^="Stick"]::after,
+.player[data-tip^="Petrikov Simon"]::after,
+.player[data-tip^="Tomas Norkus"]::after,
+.player[data-tip^="Trzynastka"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 90%;   
+    box-shadow: 0 0 20px 10px #EEFF00;
+    border-bottom: solid 2px yellow;
+    z-index: 0;
+}
+
+.player[data-tip^="Limsa Lominsa"] .number,
+.player[data-tip^="Angelica Heizen"] .number,
+.player[data-tip^="Stick"] .number,
+.player[data-tip^="Petrikov Simon"] .number,
+.player[data-tip^="Tomas Norkus"] .number,
+.player[data-tip^="Trzynastka"] .number { visibility: hidden; }
+
+
+/* KAPIROLO ====================================*/
+.player[data-tip^="nevada niebieska"]::after,
+.player[data-tip^="mały naładowany"]::after,
+.player[data-tip^="rdza na bani"]::after,
+.player[data-tip^="ronaldinho z zagaja"]::after,
+.player[data-tip^="takeout kebab"]::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 90%;   
+    box-shadow: 0 0 20px 10px #00B7FD;
+    border-bottom: solid 2px aqua;
+    z-index: 0;
+}
+
+.player[data-tip^="nevada niebieska"] .number,
+.player[data-tip^="mały naładowany"] .number,
+.player[data-tip^="rdza na bani"] .number,
+.player[data-tip^="ronaldinho z zagaja"] .number,
+.player[data-tip^="takeout kebab"] .number { visibility: hidden; }
+
+
+.player .number { z-index: 2; }
+
+img[data-stats*="legendary"] {
+ box-shadow: 0 0 20px 4px red;
+ border: 2px solid red;
+ animation-name: spin;
+ animation-duration: 2000ms;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+ z-index: 500;
+}
+
+img {
+ border-width: 2px;
+ border-radius: 6px;
+}
+
+img[data-stats*="heroic"] {
+ box-shadow: 0 0 10px 2px blue;
+}
+
+img[data-stats*="unique"] {
+  box-shadow: 0 0 5px yellow;
+}
+
+.item.col-md-12.row-shadow {
+  overflow: visible;
+}
+
+
+
+   
+@keyframes spin {
+    0% {
+        box-shadow: 0 0 12px 2px #500000;
+        border-color: #500000;
+    }
+    50% {
+        box-shadow: 0 0 14px 4px red;
+        border-color: red;
+    }
+    100% {
+        box-shadow: 0 0 12px 2px #500000;
+        border-color: #500000;
+    }
+}
